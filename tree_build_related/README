@@ -1,0 +1,2 @@
+This folder contains the settings to generate the phylogentic trees using MEGA X. Please download SILVA_138_SSURef_NR99_05_01_20_opt.arb using 
+wget -N https://www.arb-silva.de/fileadmin/silva_databases/release_138/ARB_files/SILVA_138_SSURef_NR99_05_01_20_opt.arb.gz

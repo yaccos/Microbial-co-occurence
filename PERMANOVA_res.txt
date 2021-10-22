@@ -1,0 +1,16 @@
+
+Call:
+adonis(formula = refine_data(end_physeq, renormalize = FALSE) %>%      t() %>% cor(method = "spearman") %>% {     subtract(1, .) } ~ selection.group + selection.regime.at.sampling, data = end_physeq %>%      sample_data() %>% data.frame(), permutations = 10^6L, parallel = 4L) 
+
+Permutation: free
+Number of permutations: 1e+06
+
+Terms added sequentially (first to last)
+
+                             Df SumsOfSqs MeanSqs F.Model      R2  Pr(>F)    
+selection.group               1   0.25889 0.25889  3.0645 0.08350 0.01739 *  
+selection.regime.at.sampling  1   1.06729 1.06729 12.6337 0.34426   1e-06 ***
+Residuals                    21   1.77408 0.08448         0.57224            
+Total                        23   3.10026                 1.00000            
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

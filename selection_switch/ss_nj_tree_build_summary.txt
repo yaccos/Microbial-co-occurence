@@ -1,0 +1,62 @@
+;   MEGA-CC (Molecular Evolutionary Genetics Analysis Compute Core)
+;
+;   Suggested Citation for MEGA-CC 10:
+;
+;   Kumar S, Stecher G, Li M, Knyaz C, Tamura K
+;   MEGA X: Molecular Evolutionary Genetics Analysis across computing platforms
+;   Molecular Biology and Evolution (2018) 35:1547-1549
+;
+;   Kumar S, Stecher G, Peterson D, and Tamura K
+;   MEGA-CC: Computing Core of Molecular Evolutionary Genetics
+;   Analysis Program for Automated and Iterative Data Analysis.
+;   Bioinformatics (2012) 28:2685-2686 (Epub 2012 Aug 24)
+
+[Application Info]
+
+	Version                                 = 10.1.7
+	Build                                   = 10200107-x86_64
+	User Interface                          = CommandLine
+	Operating System                        = linux
+
+[General Info]
+
+	Data Type                               = nucleotide (non-coding)
+	No. of Taxa                             =     1544
+	No. of Sites                            =     1077
+	Data File                               = 'ss_filtered_sequences.meg'
+	Settings File                           = './nj_phylotree.mao'
+	Command Line                            = /usr/lib/megax/megacc -a nj_phylotree.mao -d ss_filtered_sequences.meg -o ss_nj_tree_build
+
+[Analysis Settings]
+
+	Analysis                                = Phylogeny Reconstruction
+	Scope                                   = All Selected Taxa
+	Statistical Method                      = Neighbor-joining
+	Test of Phylogeny                       = None
+	No. of Bootstrap Replications           = Not Applicable
+	Substitutions Type                      = Nucleotide
+	Model/Method                            = Maximum Composite Likelihood
+	Substitutions to Include                = d: Transitions + Transversions
+	Rates among Sites                       = Uniform Rates
+	Gamma Parameter                         = Not Applicable
+	Pattern among Lineages                  = Same (Homogeneous)
+	Gaps/Missing Data Treatment             = Pairwise deletion
+	Site Coverage Cutoff (%)                = Not Applicable
+	Number of Threads                       = 1
+	Has Time Limit                          = False
+	Maximum Execution Time                  = -1
+	datatype                                = snNucleotide
+	containsCodingNuc                       = False
+	MissingBaseSymbol                       = ?
+	IdenticalBaseSymbol                     = .
+	GapSymbol                               = -
+	Labelled Sites                          = All Sites
+	Labels to Include                       = 
+
+[Analysis Statistics]
+
+	Start Time                              = 03/18/20 11:44:27 AM
+	End Time                                = 03/18/20 11:47:07 AM
+	Execution Time                          =  159.242 (seconds)
+	Max Heap Memory Used                    = 15.292 (MB)
+	Sum of branch lengths                   =   90.157

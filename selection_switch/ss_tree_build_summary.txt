@@ -1,0 +1,67 @@
+;   MEGA-CC (Molecular Evolutionary Genetics Analysis Compute Core)
+;
+;   Suggested Citation for MEGA-CC 10:
+;
+;   Kumar S, Stecher G, Li M, Knyaz C, Tamura K
+;   MEGA X: Molecular Evolutionary Genetics Analysis across computing platforms
+;   Molecular Biology and Evolution (2018) 35:1547-1549
+;
+;   Kumar S, Stecher G, Peterson D, and Tamura K
+;   MEGA-CC: Computing Core of Molecular Evolutionary Genetics
+;   Analysis Program for Automated and Iterative Data Analysis.
+;   Bioinformatics (2012) 28:2685-2686 (Epub 2012 Aug 24)
+
+[Application Info]
+
+	Version                                 = 10.1.7
+	Build                                   = 10200107-x86_64
+	User Interface                          = CommandLine
+	Operating System                        = linux
+
+[General Info]
+
+	Data Type                               = nucleotide (non-coding)
+	No. of Taxa                             =     1544
+	No. of Sites                            =     1077
+	Data File                               = 'ss_filtered_sequences.meg'
+	Settings File                           = './parsionmious_phylotree.mao'
+	Command Line                            = /usr/lib/megax/megacc -a parsionmious_phylotree.mao -d ss_filtered_sequences.meg -o ss_tree_build.log
+
+[Analysis Settings]
+
+	Analysis                                = Phylogeny Reconstruction
+	Statistical Method                      = Maximum Parsimony
+	Test of Phylogeny                       = None
+	No. of Bootstrap Replications           = Not Applicable
+	Substitutions Type                      = Nucleotide
+	Gaps/Missing Data Treatment             = Use all sites
+	Site Coverage Cutoff (%)                = Not Applicable
+	MP Search Method                        = Subtree-Pruning-Regrafting (SPR)
+	No. of Initial Trees (random addition)  = 10
+	MP Search level                         = 1
+	Max No. of Trees to Retain              = 100
+	Calculate Branch Lengths                = No
+	Number of Threads                       = 1
+	Has Time Limit                          = False
+	Maximum Execution Time                  = -1
+	datatype                                = snNucleotide
+	containsCodingNuc                       = False
+	MissingBaseSymbol                       = ?
+	IdenticalBaseSymbol                     = .
+	GapSymbol                               = -
+	Labelled Sites                          = All Sites
+	Labels to Include                       = 
+
+[Analysis Statistics]
+
+	Start Time                              = 03/17/20 12:52:21 PM
+	End Time                                = 03/17/20 03:51:13 PM
+	Execution Time                          = 10732.154 (seconds)
+	Max Heap Memory Used                    = 19.055 (MB)
+	Tree Length                             =    44558
+	CI                                      =    0.039(Consistency Index for all sites)
+	RI                                      =    0.633(Retention Index for all sites)
+	RC                                      =    0.025(Rescaled Index for all sites)
+	iCI                                     =    0.034(Consistency Index for parsimony informative sites)
+	iRI                                     =    0.633(Retention Index for parsimony informative sites)
+	iRC                                     =    0.022(Rescaled Index for parsimony informative sites)
