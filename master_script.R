@@ -1,7 +1,7 @@
-# Set up the environment on R version 4.1.1 (uncomment if needed)
 # install.packages("renv")
 # renv::activate()
 # renv::restore()
+# Uncomment the above lines to up the environment on R version 4.1.1
 # If renv does not work, go through renv.lock and install the packages
 # manually
 source("read_selection_switch.R")

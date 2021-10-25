@@ -1,12 +1,12 @@
 Welcome to the computations for the article "Robust bacterial co-occurence community structures are independent of $r$- and $K$-selection history"
 
-This repository assumes you have R version 4.1.1 running, although somewhat older versions should also work. Running these scripts requires quite some packages, the most important of which is micInt which is available on GitHub (https://github.com/AlmaasLab/micInt). The other packages required are either on CRAN or Bioconductor. A complete pipeline can be found in master_script.R. The top of this script also includes (commented out) the procedure to restore the required packages to their proper versions. Note that R must a suitable C++ configured to run the pipeline.
+This repository assumes you have R version 4.1.1 running, although somewhat older versions should also work. Running these scripts requires quite some packages, the most important of which is micInt which is available on GitHub (https://github.com/AlmaasLab/micInt). The other packages required are either on CRAN or Bioconductor. A complete pipeline can be found in master_script.R. The top of this script also includes the procedure to restore the required packages to their proper versions using renv. To install these packages, uncomment the three first lines of master_script.R before running it. Note that R must a suitable C++ configured to run the pipeline (see https://teuder.github.io/rcpp4everyone_en/020_install.html).
  
 
 The most imporant analysis scripts are:
  - read_selection_switch.R Modify the dataset for analysis
  - prepare_analysis.R Create jobs for ReBoot algorithm
- - run_HUNT_computations.R . This script is is supposed to run on a compute cluster, not locally as it requires hours to run and ~ 100 GB of memory
+ - run_HUNT_computations.R . This script is is supposed to run on a compute server, not locally as it requires hours to run and ~ 100 GB of memory
 
 
 The most relevant visualisation scripts to look into are:

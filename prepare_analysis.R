@@ -7,10 +7,7 @@ library(magrittr)
 library(matrixStats)
 ss_physeq <- readRDS('selection_switch/ss_physeq.rds') %>% subset_samples(Reactor.name != 'Inoculum')
 #  We prepare the base similarity measures to use
-base_sim_measures <- similarity_measures(subset = c('pearson','spearman',
-                                                    'euclidean','jaccard',
-                                                    'gen_jaccard',
-                                                    'cosine','bray_curtis'))
+base_sim_measures <- similarity_measures(subset = c('pearson','spearman'))
 ss_relative_physeq <- microbiome::transform(ss_physeq,transform = 'compositional')
 filter_thresholds <- c(low = 5e-4,middle=1e-3,high=5e-3)
 microbiota_relative_list <- list(ss=ss_relative_physeq) 
