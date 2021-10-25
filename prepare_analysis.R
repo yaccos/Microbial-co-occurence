@@ -31,7 +31,6 @@ analysis_frame_microbiota$proprotion_remaining_otus <- map(analysis_frame_microb
     ylab('Number of samples')+xlab('Proportion of the sample made up by the kept OTUs')+
     scale_x_continuous(limits = c(0,1.05))  
 }) 
-analysis_frame_microbiota$proprotion_remaining_otus[[6]]
 
 # Finds largest positive obsevation of the OTU abundances
 min_dataset_FUN <- function(physeq){
