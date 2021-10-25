@@ -8,6 +8,9 @@ library(matrixStats)
 library(igraph)
 library(viridis)
 library(scales)
+if(!dir.exists("figures")){
+  dir.create("figures")
+}
 annotated_count_frame <- readRDS('annotated_count_frame.rds')
 
 test_frame_ss_low_absolute <- annotated_count_frame %>% 

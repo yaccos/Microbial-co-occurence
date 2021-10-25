@@ -18,6 +18,9 @@ source("dynamic_networks_utils.R")
 options(stringsAsFactors = FALSE)
 MAX_EDGES = 500
 top_res <- readRDS('top_res.rds')
+if(!dir.exists("figures")){
+  dir.create("figures")
+}
 total_compute_frame <- readRDS('total_combined_combinations.rds')
 total_compute_frame$top_res <- top_res
 annotated_count_frame <- readRDS('annotated_count_frame.rds')
@@ -409,7 +412,6 @@ for (parameter in names(custom_filtering_criteria)) {
     all_time_plot  +
     geom_path(size = 5,arrow = arrow(length = unit(0.2,'inches'))) +
     geom_point(size = 8,alpha = 0.5) +
-    # ggsci::scale_color_npg() +
     viridis::scale_color_viridis(discrete = TRUE) +
     geom_text(aes_string(label = "time_points"), size = 12, color = "black") +
     facet_grid(selection.regime.at.sampling ~ Switch) + theme_bw() + 

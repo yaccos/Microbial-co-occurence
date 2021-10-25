@@ -11,6 +11,9 @@ library(kableExtra)
 library(cowplot)
 source("dynamic_networks_utils.R")
 source("tidy_phylo_subset.R")
+if(!dir.exists("figures")){
+  dir.create("figures")
+}
 # The purpose of this script is to identify and explore interaction Modules (network communities) in the
 # ReBoot interaction networks for the selection-switch dataset
 options(stringsAsFactors = FALSE)

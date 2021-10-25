@@ -12,6 +12,9 @@ library(cowplot)
 library(viridis)
 library(vegan)
 source("tidy_phylo_subset.R")
+if(!dir.exists("figures")){
+  dir.create("figures")
+}
 total_compute_frame <- readRDS('total_combined_combinations.rds')
 selected_row <- total_compute_frame %>% filter(dataset == 'ss',noise_level == 'low', threshold == 5e-04, abundance_type == 'absolute',
                                                sim_measure_name == 'spearman_normal')
@@ -54,7 +57,6 @@ plot <- all_time_plot  +
   theme(plot.title = element_text(size = 18),axis.title = element_text(size = 18),axis.text = element_text(size = 18),
         legend.text = element_text(size = 15),
         legend.title = element_text(size = 18),legend.position = 'none')
-# For experimental plots to avoid chaning the manuscript
 ggsave(filename = "figures/ss_main_trajectories.pdf",
        plot = plot + theme_bw() + theme(legend.position = "none",axis.title = element_text(size = 55),
                                        axis.text = element_text(size = 55),
